@@ -2,13 +2,24 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/user/muhmushtaha">Profile</router-link>
     </div>
-    <router-view/>
+    <div id="container">
+      <router-view />
+    </div>
   </div>
 </template>
 
 <style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -28,5 +39,9 @@
       color: #42b983;
     }
   }
+}
+#container {
+  max-width: 900px;
+  margin: 0 auto;
 }
 </style>
